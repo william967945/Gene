@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gene</title>
+	<meta charset="UTF-8">
+	<link  rel="stylesheet" type="text/css" herf="css/style.css">
+	<script type="text/javascript">
+		function checkAnswer(){
+			var answer ="徐慧妤呂學柏";
+			if (inputAnswer =="徐慧妤呂學柏") {
+				alert("恭喜你答對!!")
+			}
+
+
+
+
+		}
+	</script>
+</head>
+<body>
+	<p><img src="img/main.jpg" alt="My image " width=auto height=auto></p>
+	<p>請問789群組中哪兩個人沒有出現在照片上?</p>
+	
+
+
+
+	<form >
+		
+	   	 答案1:<input type="text" id="徐慧妤" required="required"/><br />
+	     答案2:<input type="text" id="呂學柏"  onblur="check()"required="required"/>
+	     
+	   	<input type="submit"  value="提交" />
+	   </form>
+	   <script>
+		  function check(){
+		  	var password1=document.getElementById("徐慧妤").value;
+		  	var answer1 = "徐慧妤";
+		  	var answer2 = "呂學柏";
+			var password2=document.getElementById("呂學柏").value;
+			if(password1!= answer1){
+					alert("密碼不一致請核查");
+			}
+			if(password2!= answer2){
+					alert("密碼不一致請核查");
+			}
+			if (password1 == answer1&& password2 == answer2) {
+					alert("答案正確!");
+					window.location.href='heart.html';
+			}
+
+		  }
+		</script>
+	
+</body>
+</html>
